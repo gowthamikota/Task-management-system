@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Task management System</h1>
+    <form id="todoForm">
+        <input type="hidden" id="todoId">
+        <label for="description">Task:</label>
+        <input type="text" id="desc" required>
+        <br><br>
+        <label for="category">Category:</label>
+        <select id="category" required>
+            <option value="Work">Work</option>
+            <option value="Personal">Personal</option>
+            <option value="Entertainment">Entertainment</option>
+            <option value="Others">Others</option>
+        </select>
+        <br><br>
+        <label for="priority">Priority:</label>
+        <select id="priority" required>
+            <option value="Low">Low</option>
+            <option value="Medium">Medium</option>
+            <option value="High">High</option>
+        </select>
+        <br><br>
+        <label for="status">Status:</label>
+        <select id="status" required>
+            <option value="Pending">Pending</option>
+            <option value="In Progress">In Progress</option>
+            <option value="Completed">Completed</option>
+        </select>
+        <br><br>
+        <button type="submit">Add To-Do</button>
+    </form>
+
+    <h2>Tasks List</h2>
+    <table border="1" id="todoTable">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Description</th>
+                <th>Category</th>
+                <th>Priority</th>
+                <th>Status</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+        </tbody>
+    </table>
+
+    <script src="script.js"></script>
+</body>
+</html>
